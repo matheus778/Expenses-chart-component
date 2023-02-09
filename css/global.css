@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  --brown200: hsl(25, 47%, 15%);
+  --brown100: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --orange: hsl(33, 100%, 98%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}
