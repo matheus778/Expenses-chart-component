@@ -40,6 +40,10 @@
 .chart-body {
   width: 90%;
   max-width: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 1.5rem;
   box-shadow: 1px 2px 5px var(--brown100);
   background-color: var(--orange); 
@@ -114,8 +118,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   position: relative;
+  height: 150px;
 }
 
 .day span {
@@ -131,7 +136,7 @@
   height: 40px;
   background-color: var(--red);
   cursor: pointer;
-  transition: opacity 500ms , height 900ms ease-out  ;
+  transition: opacity 500ms , height 900ms;
 }
 
 @media(max-width: 400px) {
@@ -164,7 +169,4 @@
   position: absolute;
   top: -5rem;
   opacity: initial;
-}
-
-.day:first-child .value-day {
 }
