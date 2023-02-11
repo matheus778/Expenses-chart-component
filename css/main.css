@@ -1,0 +1,170 @@
+.chart-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.chart-header {
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--red);
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  box-shadow: 1px 2px 5px var(--brown100);
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--cream);
+}
+
+.balance span:first-child {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.balance span:last-child {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.chart-body {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1.5rem;
+  box-shadow: 1px 2px 5px var(--brown100);
+  background-color: var(--orange); 
+}
+
+.title {
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.title span {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--brown200);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.total-month, .last-month{
+  display: flex;
+  flex-direction: column;
+}
+
+.last-month {
+  justify-content: center;
+  align-items: end;
+}
+
+.total-month span:first-child {
+  font-size: 1.5rem;
+  color: var(--brown100);
+}
+
+.total-month span:last-child {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--brown200);
+}
+
+.last-month span:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brown200);
+}
+
+.last-month span:last-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--brown100);
+}
+
+.days-container {
+  padding: 2.5rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.line {
+  margin: 0 auto;
+  opacity: 0.3;
+  width: 90%;
+  border-bottom: 1px solid var(--brown100);
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.day span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--brown100);
+}
+
+.value-day {
+  border-radius: 0.5rem;
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: var(--red);
+  cursor: pointer;
+  transition: opacity 500ms , height 900ms ease-out  ;
+}
+
+@media(max-width: 400px) {
+  .value-day {
+    width: 35px;
+  }
+}
+
+.value-day:hover {
+  opacity: 0.5;
+}
+
+.clicked {
+  background-color: var(--cyan);
+}
+
+.detail-hover {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  width: max-content;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--brown200);
+  position: absolute;
+  top: -5rem;
+  opacity: initial;
+}
+
+.day:first-child .value-day {
+}
