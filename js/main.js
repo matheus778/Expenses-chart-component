@@ -1,7 +1,7 @@
 const valueDays = document.querySelectorAll('.value-day');
 
 async function getDataJson() {
-  const dataFile = await fetch('../data.json', {
+  const dataFile = await fetch('../data/data.json', {
     method: 'GET',
     headers: new Headers(),
     mode: 'cors',
